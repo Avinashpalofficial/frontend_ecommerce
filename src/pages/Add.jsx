@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 function Add() {
   return (
     <form>
-      <p>Upload Image</p>
+      <p className="text-sm font-light mb-2">Upload Image</p>
       <div className="flex gap-2">
         <div className=" ">
           <label htmlFor="image1" className=" mb-1 font-semibold">
@@ -30,7 +30,7 @@ function Add() {
           </label>
         </div>
       </div>
-      <div className="w-full ">
+      <div className="w-full mt-2 ">
         <p className="text-sm font-light mb-2">Product name</p>
         <input
           type="text"
@@ -39,7 +39,7 @@ function Add() {
         />
       </div>
 
-      <div className="w-full ">
+      <div className="w-full mt-2 ">
         <p className="text-sm font-light mb-2">Product description</p>
         <input
           type="text"
@@ -47,33 +47,70 @@ function Add() {
           placeholder="Enter product description"
         />
       </div>
-      <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-col sm:flex-row gap-4 mt-6">
         <div>
-             <p className="text-sm font-light mb-2">Product category</p>
-             <select name="" id="" className="border border-gray-400 w-full px-3 py-2 rounded-md">
-              <option value="Men">Men</option>
-              <option value="Women">Women</option>
-              <option value="Kids">Kids</option>
-             </select>
+          <p className="text-sm font-light mb-2">Product category</p>
+          <select
+            name=""
+            id=""
+            className="border border-gray-400 w-full px-3 py-2 rounded-md"
+          >
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Kids">Kids</option>
+          </select>
         </div>
-         <div>
-             <p className="text-sm font-light mb-2">Sub category</p>
-             <select name="" id="" className="border border-gray-400 w-full px-3 py-2 rounded-md"> 
-              <option value="topwear">topwear</option>
-              <option value="bottomwear">bottomwear</option>
-              <option value="footwear">footwear</option>
-             </select>
+        <div>
+          <p className="text-sm font-light mb-2">Sub category</p>
+          <select
+            name=""
+            id=""
+            className="border border-gray-400 w-full px-3 py-2 rounded-md"
+          >
+            <option value="topwear">topwear</option>
+            <option value="bottomwear">bottomwear</option>
+            <option value="footwear">footwear</option>
+          </select>
         </div>
 
-         <div>
-             <p className="text-sm font-light mb-2">Product Price</p>
-             <input type="number" className="border border-gray-400 w-full rounded-md px-3 py-2 " placeholder="2" />
+        <div>
+          <p className="text-sm font-light mb-2">Product Price</p>
+          <input
+            type="number"
+            className="border border-gray-400 w-full rounded-md px-3 py-2 "
+            placeholder="2"
+          />
         </div>
-
-         
-
       </div>
+        <div className="mt-4">
+          <p>Product Sizes</p>
 
+          <div className="flex gap-2 mt-2 mb-4">
+              <div className="w-5 bg-slate-200 flex items-center justify-center px-5 py-2 cursor-pointer">
+            <p>S</p>
+          </div>
+           <div className="w-5 bg-slate-200 flex items-center justify-center px-5 py-2 cursor-pointer">
+            <p>M</p>
+          </div>
+           <div className="w-5 bg-slate-200 flex items-center justify-center px-5 py-2 cursor-pointer">
+            <p>L</p>
+          </div>
+           <div className="w-5 bg-slate-200 flex items-center justify-center px-5 py-2 cursor-pointer">
+            <p>Xl</p>
+          </div>
+           <div className="w-5 bg-slate-200 flex items-center justify-center px-5 py-2 cursor-pointer">
+            <p>XXl</p>
+          </div>
+          </div>
+        
+        </div>
+          <div>
+            <input type="checkbox" id="best-sellers" />
+            <label className="text-sm font-light ml-2 cursor-pointer" htmlFor="best-sellers">Add to best sellers</label>
+          </div>
+          <div className="mt-4">
+            <button className="bg-blue-500 text-white w-40 px-4 py-2 rounded-md">ADD</button>
+          </div>
     </form>
   );
 }
