@@ -30,9 +30,9 @@ const App = () => {
             <Sidebar />
             <div className="flex-1 p-6">
               <Routes>
-                <Route path="/add" element={<Add  />} />
-                <Route path="/list" element={<List  />} />
-                <Route path="/orders" element={<Order  />} />
+                <Route path="/add" element={<Add token={token} />} />
+                <Route path="/list" element={<List token={token} />} />
+                <Route path="/orders" element={<Order token={token} />} />
               </Routes>
             </div>
           </div>
