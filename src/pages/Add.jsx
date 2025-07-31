@@ -47,14 +47,27 @@ function Add() {
           placeholder="Enter product description"
         />
       </div>
-      <div>
+      <div className="flex flex-col sm:flex-row gap-4">
         <div>
              <p className="text-sm font-light mb-2">Product category</p>
-             <select name="" id="" className="border border-gray-400 w-full max-w-[500px] px-3 py-2 ">
-              <option value="">Men</option>
-              <option value="">Women</option>
-              <option value="">Kids</option>
+             <select name="" id="" className="border border-gray-400 w-full px-3 py-2 rounded-md">
+              <option value="Men">Men</option>
+              <option value="Women">Women</option>
+              <option value="Kids">Kids</option>
              </select>
+        </div>
+         <div>
+             <p className="text-sm font-light mb-2">Sub category</p>
+             <select name="" id="" className="border border-gray-400 w-full px-3 py-2 rounded-md"> 
+              <option value="topwear">topwear</option>
+              <option value="bottomwear">bottomwear</option>
+              <option value="footwear">footwear</option>
+             </select>
+        </div>
+
+         <div>
+             <p className="text-sm font-light mb-2">Product Price</p>
+             <input type="number" className="border border-gray-400 w-full rounded-md px-3 py-2 " placeholder="2" />
         </div>
 
          
